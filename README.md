@@ -53,4 +53,12 @@ return the user's routes for only the services listed.
 
 ## Building/Running
 
-TODO: please provide instructions to build and run your program(s) along with any require tools an dependencies.
+- Use any IDE of your choice and open project
+- Create jar
+- Open terminal
+- Go to root project
+- Run the following command java -jar [LOCATION OF JAR]
+
+- Main class will print out the sample output using "42" userId.
+
+- Test file is used with Junit 4. It located under the test folder.

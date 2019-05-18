@@ -55,7 +55,7 @@ return the user's routes for only the services listed.
 
 - Use any IDE of your choice and open project
 - Create jar
-- Open terminal
+- Use the run command on the IDE and run the Main class or Open terminal
 - Go to root project
 - Run the following command java -jar [LOCATION OF JAR]
 

@@ -10,9 +10,9 @@ Write a simple program in a language of your choice that has implementations for
 
 Results should be printed to standard output after following the build instructions.
 
-### Services
+### src.main.Services
 
-Each service has the ability to get routes. Services can retreive all routes or retrieve routes for a specific user.
+Each service has the ability to get routes. src.main.Services can retreive all routes or retrieve routes for a specific user.
 
 #### Strava
 

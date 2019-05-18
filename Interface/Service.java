@@ -1,6 +1,8 @@
 package Interface;
 
+import java.util.List;
+
 public interface Service {
-    public void modifyRouteList(String id);
+    public List<String> modifyRouteList(String id);
 
 }

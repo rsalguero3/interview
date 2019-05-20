@@ -7,13 +7,12 @@ jobs:
       - image: circleci/openjdk:8-jdk-browsers
 
     steps:
-      - checkout:
-          path: ~/
+      - checkout
 
       - run:
           name: Build
-          command: javac Main.java
+          command: ./gradlew run
 
       - run:
           name: Test
-          command: java test/RouteManagerTest.java
+          command: ./gradlew clean test

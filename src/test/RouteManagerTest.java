@@ -38,7 +38,7 @@ public class RouteManagerTest {
         Assert.assertEquals(routes, routeManager.getUniqueRoutes());
     }
 
-    @org.junit.Test
+    @Test
     public void getUserRoutes() {
         RouteManager routeManager = new RouteManager();
 
@@ -56,7 +56,7 @@ public class RouteManagerTest {
         Assert.assertEquals(routes, routeManager.getUserRoutes("42"));
     }
 
-    @org.junit.Test
+    @Test
     public void getUserRoutesByService() {
         RouteManager routeManager = new RouteManager();
 

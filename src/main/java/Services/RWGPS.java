@@ -4,6 +4,7 @@ package Services;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 
 public class RWGPS extends Service {
     public List<String> routes = new ArrayList<>(Arrays.asList("CVT", "Perkiomen", "Welsh Mountain"));
@@ -14,7 +15,8 @@ public class RWGPS extends Service {
      * @return Returns a List of routes with the id appended onto the route.
      */
     public List<String> getModifyRouteList(String id) {
-        return super.getModifyRouteList(id, routes, true, false);
+        Function<String, String> pattern = (s) -> s + id;
+        return super.getModifyRouteList(routes, pattern);
     }
 
     public List<String> getRoutes() {

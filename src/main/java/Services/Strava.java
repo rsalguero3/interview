@@ -4,6 +4,7 @@ package Services;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 
 public class Strava extends Service {
     public List<String> routes = new ArrayList<>(Arrays.asList("SRT", "CVT", "Perkiomen"));
@@ -14,7 +15,8 @@ public class Strava extends Service {
      * @return Returns a List of routes with the id prepended onto the route.
      */
     public List<String> getModifyRouteList(String id) {
-        return super.getModifyRouteList(id, routes, false, true);
+        Function<String, String> pattern = (s) -> id + s;
+        return super.getModifyRouteList(routes, pattern);
     }
 
     public List<String> getRoutes() {
